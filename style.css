@@ -1,0 +1,113 @@
+body {
+    justify-content: center;
+    align-items: center;
+    background: tomato;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.progress {
+    background: rgba(255, 255, 255, 0.1);
+    justify-content: flex-start;
+    border-radius: 100px;
+    align-items: center;
+    position: relative;
+    padding: 0 5px;
+    display: flex;
+    height: 40px;
+    width: 500px;
+}
+
+.progress-status {
+    animation: load 15s normal forwards;
+
+    border-radius: 50px;
+    background: #fff;
+    height: 50px;
+    width: 0;
+
+}
+
+@keyframes load {
+    0% {
+        width: 0;
+    }
+
+    50% {
+        width: 50%;
+        background-color: #fff;;
+    }
+
+    75% {
+        width: 75%;
+        background-color: #fff;
+    }
+
+    100% {
+        width: 100%;
+        background-color: green;
+    }
+}
+
+#spin {
+    color: rgb(142, 223, 219);
+}
+
+#spin:after {
+    content: "";
+    animation: spin 15s linear;
+}
+
+@keyframes spin {
+    0% {
+        content: "loading";
+    }
+
+    10% {
+        content: "taking a bit, huh?";
+    }
+
+    20% {
+        content: "damn...";
+    }
+
+    30% {
+        content: "so slow...";
+    }
+
+    40% {
+        content: "sorry";
+    }
+
+    50% {
+        content: "ok, almost finished";
+    }
+
+    60% {
+        content: "tic toc tic toc";
+    }
+
+    70% {
+        content: "You really need to spend more on your internet, man!";
+    }
+
+    80% {
+        content: "almost there...";
+    }
+
+    90% {
+        content: "1 more second...";
+    }
+
+    100% {
+        content: "Done...dude, you need better internet!";
+    }
+}
+
+.status {
+color: rgb(252, 204, 117);
+}
