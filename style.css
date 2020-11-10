@@ -59,7 +59,8 @@ body {
 
 #spin:after {
     content: "";
-    animation: spin 15s linear;
+    animation: spin 15s forwards linear;
+
 }
 
 @keyframes spin {
